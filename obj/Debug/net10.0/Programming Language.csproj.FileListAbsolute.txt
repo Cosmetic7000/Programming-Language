@@ -12,3 +12,4 @@ C:\Users\cosme\Documents\VSCode Projects\Programming Language\obj\Debug\net10.0\
 C:\Users\cosme\Documents\VSCode Projects\Programming Language\obj\Debug\net10.0\Programming Language.pdb
 C:\Users\cosme\Documents\VSCode Projects\Programming Language\obj\Debug\net10.0\Programming Language.genruntimeconfig.cache
 C:\Users\cosme\Documents\VSCode Projects\Programming Language\obj\Debug\net10.0\ref\Programming Language.dll
+C:\Users\cosme\Documents\VSCode Projects\Programming Language\obj\Debug\net10.0\Programming Language.sourcelink.json

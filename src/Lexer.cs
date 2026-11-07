@@ -20,12 +20,19 @@ public struct Token
     this.Value = value;
     this.Type = type;
   }
+
+  public override string ToString()
+  {
+    return "Token: {Value: "+this.Value+", Type: "+this.Type+"}";
+  }
 }
 
 
 public class Lexer
 {
-  public Dictionary<string, TokenType> Keywords = [];
+  public Dictionary<string, TokenType> Keywords = new Dictionary<string, TokenType>{
+    {"var", TokenType.Var}
+  };
 
   public List<Token> Tokenize(string source_code)
   {
@@ -93,13 +100,13 @@ public class Lexer
   }
 
 
-  public static bool IsSkippable(char character)
+  private static bool IsSkippable(char character)
   {
     return character == ' ' || character == '\t' || character == '\n';
   }
 
 
-  public static TokenType? GetTokenType(char character)
+  private static TokenType? GetTokenType(char character)
   {
     switch (character)
       {
